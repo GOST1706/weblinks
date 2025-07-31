@@ -5,53 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESIUIS - Residencias UIS</title>
     <style>
+        :root {
+            --verde-uis: #004B23; /* Verde UIS */
+            --blanco: #ffffff;
+            --dorado-uis: #C8B18B; /* Dorado UIS */
+            --fondo-contenedor: rgba(0, 0, 0, 0.2);
+        }
         body {
+            background: var(--verde-uis);
+            color: var(--blanco);
             font-family: Arial, sans-serif;
-            background-color: #004B23; /* Verde UIS */
-            color: white;
             text-align: center;
             padding: 20px;
         }
         .container {
             max-width: 600px;
             margin: auto;
-            background: #ffffff22;
+            background: var(--fondo-contenedor);
             padding: 20px;
             border-radius: 10px;
         }
         img {
-            width: 200px;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.8));
+            margin-bottom: -35px;
         }
         h1 {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 50px;
-            color: #FFD700; /* Amarillo UIS */
+            font-family: "Times New Roman", serif;
+            font-size: 48px;
+            color: var(--dorado-uis);
+            margin-bottom: 15px;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
         }
         .button {
-            display: block;
-            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 300px;
             margin: 10px auto;
-            padding: 10px;
-            background: #0073e6;
-            color: white;
+            padding: 12px;
+            background: var(--dorado-uis);
+            color: var(--verde-uis);
             text-decoration: none;
             font-size: 18px;
+            font-weight: bold;
+            border: none;
             border-radius: 5px;
             transition: 0.3s;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
         }
         .button:hover {
-            background: #005bb5;
+            background: #b8a17b;
+        }
+        .button img {
+            width: 35px;
+            height: 35px;
+            margin: 0 3px 0 10px;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.8));
+        }
+        .button span {
+            flex: 1;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://i.ibb.co/d470JzLz/resiuis.png" alt="Logo RESIUIS">
+        <img src="https://i.ibb.co/d470JzLz/resiuis.png" alt="Logo RESIUIS" width="180">
         <h1>RESIUIS</h1>
-        <p>En esta página encontrarás todos los enlaces relacionados con las residencias universitarias.</p>
-        <a class="button" href="https://1drv.ms/x/c/d3a24892a17101cb/EUmVtSKM_kNJmPFGLbL8WLYB_vVkzy0UIxuQsSFB6eKLgw?e=Apm4dA&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0" target="_blank">⚖️ Fiscalía</a>
-        <a class="button" href="https://correouisedu-my.sharepoint.com/:x:/g/personal/dario2191744_correo_uis_edu_co/EWY7XO7zD9NNu7VxPXdeJ_QBaaFbVDd1Dm6dqZNEOPNooA?e=onKAMS" target="_blank">💰 Consulta Tesorería</a>
-        <a class="button" href="https://mailuis-my.sharepoint.com/:f:/g/personal/residencias_bu_uis_edu_co/Ejx5BPkkWtdEtOjCz4g8DwMBigNzWXq_-dwWyJN8N95eJA?e=aC2cyN" target="_blank">📜 Secretaría: Actas</a>
+
+        <a class="button" href="https://1drv.ms/x/c/d3a24892a17101cb/EUmVtSKM_kNJmPFGLbL8WLYB_vVkzy0UIxuQsSFB6eKLgw?e=Apm4dA&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0" target="_blank">
+            <img src="https://i.ibb.co/TMgKtCB4/fiscalia-removebg-preview.png" alt="Ícono Fiscalía">
+            <span>FISCALÍA</span>
+        </a>
+
+        <a class="button" href="https://correouisedu-my.sharepoint.com/:x:/g/personal/dario2191744_correo_uis_edu_co/EWY7XO7zD9NNu7VxPXdeJ_QBaaFbVDd1Dm6dqZNEOPNooA?e=onKAMS" target="_blank">
+            <img src="https://i.ibb.co/YT8p4XS1/image-removebg-preview.png" alt="Ícono Tesorería">
+            <span>CONSULTA TESORERÍA</span>
+        </a>
+
+        <a class="button" href="https://mailuis-my.sharepoint.com/:f:/g/personal/residencias_bu_uis_edu_co/Ejx5BPkkWtdEtOjCz4g8DwMBigNzWXq_-dwWyJN8N95eJA?e=aC2cyN" target="_blank">
+            <img src="https://i.ibb.co/Lz4m8jzS/Secre-removebg-preview.png" alt="Ícono Secretaría">
+            <span>SECRETARÍA: ACTAS</span>
+        </a>
+
     </div>
 </body>
 </html>
+
